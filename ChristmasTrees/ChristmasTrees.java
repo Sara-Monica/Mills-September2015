@@ -18,15 +18,15 @@ public class ChristmasTrees
     }
     public static void treeTemplate(int sections, int height)
     {
-        for (int i=1; i<= sections; i++)
+        for (int i=1; i<=sections; i++)
         {
             for (int j=1; j<= height; j++)
             {
-                for (int k=4; k > j; k--)
+                for (int k=1; k <= (7- i)- j; k++)
                 {
                     System.out.print (" ");
                 }
-                for (int h= i; h<= j*j; h++)
+                for (int h= 1; h <= (2* j)+ (2*i)-3 ; h++)
                 {
                     System.out.print ("*");
                 }
